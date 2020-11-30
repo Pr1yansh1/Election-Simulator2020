@@ -24,9 +24,6 @@ def mousePressed(app,event):
     if dist(event.x,event.y,app.x,app.y) <= 20:
         
 
-def redrawAll(app, canvas):
-    testPopulation(app,canvas)
-    
 def testPopulation(app, canvas):
     canvas.create_line(app.width//2 ,0 ,app.width//2, app.height )
     canvas.create_line(0,app.height//2 ,app.width, app.height//2 )
